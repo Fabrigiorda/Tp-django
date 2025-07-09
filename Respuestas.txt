@@ -1,5 +1,5 @@
 Respuestas:
-1) Django es un framework web de alto nivel en python el cual se usa para desarrollar aplicaciones web de forma rápida, segura y escalable. Esta incluye muchas herramientas integradas como autenticación de usuarios, administración de contenido y manejo de bases de datos, lo que permite ahorrar tiempo a la hora de programar y evitar tareas repetitivas. Usaremos este framework por varias razones como que es rápido de aprender, busca ayudarte a la hora de programar para no ser tan repetitivo y está diseñado para ser seguro por defecto, y aparte es gratis y de código abierto
+1) Django es un framework web de alto nivel en python el cual se usa para desarrollar aplicaciones web de forma rápida, segura y escalable. Tiene muchas herramientas integradas como autenticación de usuarios, administración de contenido y manejo de bases de datos, lo que permite ahorrar tiempo a la hora de programar y evitar tareas repetitivas. Usaremos este framework por varias razones como que es rápido de aprender, busca ayudarte a la hora de programar para no ser tan repetitivo y está diseñado para ser seguro por defecto, y aparte es gratis y de código abierto
 
 
 
@@ -22,7 +22,7 @@ Respuestas:
 6) En Django, un template o plantilla es un archivo de texto HTML, cuya función principal es separar la lógica de una aplicación de su presentación visual. Los templates hacen esto al mezclar código HTML normal con una sintaxis especial del Lenguaje de Plantillas de Django (DTL). Sus elementos más importantes son las variables, las cuales actúan como marcadores de posición que Django reemplaza con datos reales, y las etiquetas, que permiten usar lógica de programación, como bucles para recorrer listas o condicionales para mostrar contenido selectivamente. El proceso empieza con una vista de Django que recopila los datos, los empaqueta en un objeto llamado "contexto" y se lo pasa a la plantilla. El motor de Django entonces "renderiza" esta plantilla, ejecutando la lógica de las etiquetas y rellenando las variables para producir una página HTML.
 
 
-
+8) Para instalar Django, primero necesitás tener Python instalado en tu computadora. Luego de esto tenes que abrir un símbolo de sistema, cmd o mismo la terminal del visual studio code y poner este comando: "Python pip install django". Luego esperas a que se instale y listo
 
 
 
