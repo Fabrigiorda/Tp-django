@@ -1,0 +1,58 @@
+Respuestas:
+1) Django es un framework web de alto nivel en python el cual se usa para desarrollar aplicaciones web de forma rápida, segura y escalable. Esta incluye muchas herramientas integradas como autenticación de usuarios, administración de contenido y manejo de bases de datos, lo que permite ahorrar tiempo a la hora de programar y evitar tareas repetitivas. Usaremos este framework por varias razones como que es rápido de aprender, busca ayudarte a la hora de programar para no ser tan repetitivo y está diseñado para ser seguro por defecto, y aparte es gratis y de código abierto
+
+
+
+2)El patrón MTV es la forma en la que Django organiza el código y el flujo de trabajo en una aplicación web. Este patrón está compuesto por tres componentes que son el modelo, la vista y la plantilla o template. El modelo se encarga de manejar los datos y la lógica de la base de datos, almacenar y relacionar la información. La vista es la que recibe las peticiones del usuario, obtiene los datos necesarios para el modelo y decide que información mostrar. Por último el template define cómo se mostrará la interfaz del usuario usando html y otros formatos. Comparando el MVT con el MVC, ambos son patrones de los cuales su función es separar la lógica de negocio de la interfaz visual. Ambos organizan las aplicaciones en tres partes principales, facilitando su mantenimiento. La diferencia es que en MVC el controlador maneja la lógica y coordina el modelo y la vista. En cambio, en MVT, el framework Django se encarga del controlador, y las vistas manejan las peticiones, mientras que las plantillas definen la interfaz. Además, MVC suele usarse más en proyectos grandes, mientras que MVT es flexible para aplicaciones tanto pequeñas como grandes.
+
+
+
+3) Una app en django es una parte o un módulo de una aplicación web la cual tiene una funcionalidad específica en el proyecto, como un menú de inicio, un formulario de contacto o una base de datos. Dentro de un proyecto de Django pueden encontrarse varias apps las cuales también pueden ser reutilizadas en otros proyectos. Estas apps están formadas por modelos, vistas, templates, urls, formularios y otros archivos relacionados. Se utiliza para dividir un proyecto o aplicación grande en varias partes mas chicas de forma que quede mas ordenado
+
+
+
+4) El flujo "request-response" es el proceso central que sigue una aplicación Django. Cuando un usuario realiza una acción, se genera una solicitud HTTP que es recibida por el servidor web y entregada a Django, que la encapsula en un objeto HttpRequest. Luego el enrutador de URLs (o URL dispatcher) de Django examina la URL de la solicitud entrante para determinar qué vista debe manejarla, basándose en los patrones definidos en el archivo “urls.py”. La vista, que es el corazón de la lógica de la aplicación según el patrón MVC, es la función de Python que se encarga de procesar la petición. Dentro de la vista, se ejecuta la lógica de negocio, que puede implicar interactuar con los modelos para consultar la base de datos. Una vez procesada, la vista va a devolver un objeto HttpResponse. Esta respuesta no siempre es una página HTML; en el desarrollo de APIs, por ejemplo, es muy común que la respuesta sea un objeto JSON o una redirección. Finalmente, esta respuesta viaja de regreso al navegador del usuario para ser renderizada, pasando antes por la capa de middlewares, que también procesan la solicitud en su viaje de ida. Este ciclo se repite con cada nueva interacción del usuario.
+
+
+
+5) El ORM es una técnica o herramienta de programación que funciona como un puente o traductor entre un lenguaje de programación orientado a objetos y una base de datos relacional. Su función es mapear los objetos de una aplicación con las tablas de una base de datos, permitiendo a los desarrolladores interactuar con los datos utilizando el lenguaje de programación que ya conocen. Esto en la práctica, significa que en lugar de escribir sentencias como INSERT o SELECT, se manipulan clases y objetos. Por ejemplo, una tabla Usuarios en la base de datos se convierte en una clase Usuario en el código. Para guardar un nuevo usuario, se crea una nueva instancia de esa clase y se invoca un método como .save(), siendo el ORM el encargado de generar y ejecutar el código SQL correspondiente. Esta técnica se usa en aplicaciones que manejan grandes cantidades de datos, ya que agiliza el desarrollo al reducir el código repetitivo para tareas comunes (conocidas como CRUD: Crear, Leer, Actualizar y Borrar). Además, uno de sus beneficios más atractivos es que facilita la portabilidad; si en el futuro se decide cambiar de un sistema de base de datos como MySQL, en la mayoría de los casos no es necesario reescribir el código de la aplicación, ya que el ORM se encarga de adaptar las consultas al nuevo sistema.
+ 
+
+
+6) En Django, un template o plantilla es un archivo de texto HTML, cuya función principal es separar la lógica de una aplicación de su presentación visual. Los templates hacen esto al mezclar código HTML normal con una sintaxis especial del Lenguaje de Plantillas de Django (DTL). Sus elementos más importantes son las variables, las cuales actúan como marcadores de posición que Django reemplaza con datos reales, y las etiquetas, que permiten usar lógica de programación, como bucles para recorrer listas o condicionales para mostrar contenido selectivamente. El proceso empieza con una vista de Django que recopila los datos, los empaqueta en un objeto llamado "contexto" y se lo pasa a la plantilla. El motor de Django entonces "renderiza" esta plantilla, ejecutando la lógica de las etiquetas y rellenando las variables para producir una página HTML.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Fuentes:
+https://aws.amazon.com/es/what-is/django/
+https://developer.mozilla.org/es/docs/Learn_web_development/Extensions/Server-side/Django/Introduction
+https://www.ibm.com/es-es/topics/django
+https://medium.com/@ekezieju/mvc-vs-mvt-what-you-need-to-know-about-them-5511f561d593
+https://espifreelancer.com/mtv-django.html
+https://es.wikipedia.org/wiki/Modelo%E2%80%93vista%E2%80%93controlador
+https://codigofacilito.com/articulos/mvc-model-view-controller-explicado
+https://www.codementor.io/@chirilovadrian360/apps-in-django-concept-free-samples-294vudyim5
+https://www.w3schools.com/django/django_create_app.php
+https://docs.djangoproject.com/en/5.2/ref/request-response/
+https://apidog.com/es/blog/django-get-request-3/
+https://certidevs.com/tutorial-django-mvc-vistas-funciones
